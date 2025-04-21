@@ -12,10 +12,14 @@ class AwesomeAPI {
     {
         $response = Http::withOptions([
             'verify' => false,
-        ])->get("$this->baseEndpoint/$from-$to")->json();
+        ])->get("$this->baseEndpoint/$from-$to");
+        
+        if ($response->failed()) {
+            return $amount;
+        }
+
+        $response->json();
 
         return $response[0]['high'] * $amount;
     }
-
-
 }
