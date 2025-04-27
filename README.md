@@ -19,6 +19,9 @@ O projeto foi feito usando Laravel, portanto, para conseguir executar basta segu
 ## Print do Postman
 ![Print do postman mostrando os valores retornado da API](./prints/postman.png)
 
+## Visualização do projeto
+![Mostrando a página do projeto](./prints/Home.png)
+
 ## 👥 Integrantes
 - **Gustavo Rodrigues**
 - **Rafael Costa**
