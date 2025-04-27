@@ -16,6 +16,9 @@ O projeto foi feito usando Laravel, portanto, para conseguir executar basta segu
  php artisan key:generate
 ```
 
+## Print do Postman
+![Print do postman mostrando os valores retornado da API](./prints/postman.png)
+
 ## 👥 Integrantes
 - **Gustavo Rodrigues**
 - **Rafael Costa**
