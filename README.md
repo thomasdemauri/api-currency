@@ -1,6 +1,8 @@
-## Sobre o projeto
+## 🎓 Projeto para a Faculdade
 
-O objetivo deste trabalho é consumir uma API utilizando o verbo GET e exibir as informações de forma organizada e acessível para o usuário em uma página web.
+Este projeto foi desenvolvido como parte da disciplina **Programação Web** do curso de **Análise e Desenvolvimentos de Sistemas** na **FATEC Taquaritinga**.
+
+O objetivo deste trabalho é consumir uma API utilizando o método **GET** e exibir as informações de forma organizada e acessível para o usuário em uma página web.
 
 Fomos designados para trabalhar com a API AwesomeAPI (moedas) e optamos por desenvolver um conversor de moedas simples para demonstrar o uso da API.
 
