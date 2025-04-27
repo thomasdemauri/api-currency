@@ -1,6 +1,6 @@
 ## 🎓 Projeto para a Faculdade
 
-Este projeto foi desenvolvido como parte da disciplina **Programação Web** do curso de **Análise e Desenvolvimentos de Sistemas** na **FATEC Taquaritinga**.
+Este projeto foi desenvolvido como parte da disciplina **Programação Web** do curso de **Análise e Desenvolvimento de Sistemas** na **FATEC Taquaritinga**.
 
 O objetivo deste trabalho é consumir uma API utilizando o método **GET** e exibir as informações de forma organizada e acessível para o usuário em uma página web.
 
