@@ -2,10 +2,6 @@
 
 use App\Http\Controllers\CurrencyConverterController;
 use Illuminate\Support\Facades\Route;
-use App\Services\AwesomeAPICotacoes\AwesomeAPI;
 
-Route::get('/', function () {
-    return view('home');
-});
-
+Route::get('/', [CurrencyConverterController::class, 'home'])->name('home');
 Route::post('/convert', [CurrencyConverterController::class, 'convert'])->name('convert');

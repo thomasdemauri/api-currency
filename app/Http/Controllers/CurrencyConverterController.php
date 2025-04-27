@@ -6,6 +6,8 @@ use App\Services\AwesomeAPICotacoes\AwesomeAPI;
 use Illuminate\Http\Request;
 use Illuminate\Support\Number;
 
+use function PHPSTORM_META\type;
+
 class CurrencyConverterController extends Controller
 {
     private AwesomeAPI $api;
@@ -15,20 +17,27 @@ class CurrencyConverterController extends Controller
         $this->api = $api;
     }
 
+    public function home()
+    {
+        return view('home');
+    }
+
     public function convert(Request $request)
     {
-        $request->validate([
+        $payload = $request->validate([
             'amount' => ['required', 'min:0.01', 'decimal:0,2'],
             'from' => ['required', 'string'],
             'to' => ['required', 'string']
         ]);
 
-        $amount =  $this->api->getCurrency($request->input('from'), $request->input('to'), $request->input('amount'));
+        $amount =  $this->api->getCurrency($payload['from'], $payload['to'], $payload['amount']);
 
-        $currency = Number::currency($amount, in: $request->to);
+        if (is_numeric($amount)) {
+            $amount = Number::currency($amount, in: $request->to);
+        }
 
         return back()
             ->withInput()
-            ->with('amount', $currency);
+            ->with('amount', $amount);
     }
 }
